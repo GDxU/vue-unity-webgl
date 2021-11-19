@@ -1,13 +1,6 @@
 <template>
   <div class="webgl-content" :class="devices">
     <canvas :id="containerId"></canvas>
-    <!--
-    <canvas
-     :id="containerId"
-     :style="{ width: width + 'px', height: height + 'px' }">
-
-    </canvas>
-    -->
     <div v-if="loaded === false">
       <div class="unity-loader">
         <div class="bar">
@@ -23,13 +16,13 @@
     </div>
   </div>
 </template>
+
 <script>
-import Vue from 'vue'
 import event from '../event'
-// '/Users/hesdx/Documents/piplines/vue-unity-webgl/src/static_demo/'
-// '/static_demo/'
+import { EthereumWeb3Component } from 'vue-blocklink'
+
 export default {
-  name: 'UnityWebGL2021',
+  name: 'Unity2021Web3',
   mixins: [event],
   data() {
     return {

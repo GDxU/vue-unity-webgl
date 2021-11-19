@@ -1,6 +1,5 @@
 import unity1 from './com/Unity2019.vue'
 import unity2 from './com/Unity2021.vue'
-// import LoadScript from './lib'
 
 const install = Vue => {
   // Vue.use(LoadScript)

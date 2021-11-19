@@ -1,6 +1,6 @@
 {
   "name": "vue-unity-web3-webgl",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "description": "Unity WebGL component for VueJs application",
   "main": "src/index.js",
   "types": "src/index.d.ts",
