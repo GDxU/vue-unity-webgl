@@ -94,3 +94,8 @@ The player will be injected in the a component with the class `unity-container`.
     <script src="static/compiled/bundle.js"></script>
 </html>
 ```
+
+
+# Compile setups
+
+Copy folder `WebGLTemplates` into `Assets/` under unity root.
