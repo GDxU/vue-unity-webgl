@@ -7,7 +7,7 @@
       :id="containerId"
       v-bind:style="{ width: width + 'px', height: height + 'px' }"
     ></canvas> -->
-    <div v-if="loaded == false">
+    <div v-if="loaded === false">
       <div class="unity-loader">
         <div class="bar">
           <div
@@ -34,7 +34,7 @@ export default {
     'height',
     'externalProgress',
     'unityPrefix',
-    'hideFooter',
+    'hideFooter'
   ],
 
   name: 'UnityWebGL',
@@ -49,7 +49,7 @@ export default {
       gameInstance: null,
       loaded: false,
       progress: 0,
-      error: null,
+      error: null
     }
   },
 
@@ -68,7 +68,7 @@ export default {
     },
     unityCanvas() {
       return `#${this.containerId}`
-    },
+    }
   },
 
   methods: {
@@ -84,10 +84,10 @@ export default {
         this.gameInstance.SendMessage(gameObject, method, param)
       } else {
         console.warn(
-          "vue-unity-webgl: you've sent a message to the Unity content, but it wasn\t instantiated yet."
+          'vue-unity-webgl: you\'ve sent a message to the Unity content, but it wasn\t instantiated yet.'
         )
       }
-    },
+    }
   },
 
   beforeMount() {
@@ -95,8 +95,8 @@ export default {
       this.eventBus = new Vue({
         data: {
           ready: false,
-          load: false,
-        },
+          load: false
+        }
       })
     }
 
@@ -164,7 +164,7 @@ export default {
           streamingAssetsUrl: 'StreamingAssets',
           companyName: 'DefaultCompany',
           productName: 'CallJSFromCSharp',
-          productVersion: '0.1',
+          productVersion: '0.1'
         }
       )
 
@@ -184,10 +184,9 @@ export default {
         instantiate()
       })
     }
-  },
+  }
 }
 </script>
-
 <style scoped>
 canvas {
   width: 100%;

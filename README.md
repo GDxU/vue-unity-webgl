@@ -95,7 +95,11 @@ The player will be injected in the a component with the class `unity-container`.
 </html>
 ```
 
-
-# Compile setups
+ll# Compile setups
 
 Copy folder `WebGLTemplates` into `Assets/` under unity root.
+
+# Deployment on github
+
+https://refactoring.ninja/
+
