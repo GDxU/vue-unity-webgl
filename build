@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_OPTIONS=--max_old_space_size=8096
+npm run nuxtbuild-demo
+rsync -r static_demo/ dist/static_demo
+puer -d dist -p 8080

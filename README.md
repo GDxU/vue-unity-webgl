@@ -67,7 +67,6 @@ The player will be injected in the a component with the class `unity-container`.
 .unity {
     .unity-container {
         canvas {
-            
         }
     }
     .unity-loader {
@@ -95,9 +94,10 @@ The player will be injected in the a component with the class `unity-container`.
 </html>
 ```
 
-ll# Compile setups
+# Compile setups
 
 Copy folder `WebGLTemplates` into `Assets/` under unity root.
+Go to Build Settings > Player Settings > 
 
 # Deployment on github
 

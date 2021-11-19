@@ -1,19 +1,31 @@
 {
   "name": "vue-unity-web3-webgl",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Unity WebGL component for VueJs application",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "source": "src/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vue-cli-service serve --mode development",
+    "nuxtbuild-demo": "vue-cli-service build --name index ./src/main.js"
   },
   "repository": "git@github.com:GDxU/vue-unity-webgl.git",
   "keywords": [
     "vue",
     "unity",
-    "webgl"
+    "webgl",
+    "ethlink",
+    "metamask"
   ],
+  "engines": {
+    "node": "^12.20.0 || ^14.15.0 || ^16.10.0",
+    "yarn": ">=1.21.1 <2",
+    "npm": "Please use yarn instead of NPM to install dependencies"
+  },
   "author": "Goldman Sagg & Oyen",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GDxU/vue-unity-webgl/issues"
   },
@@ -27,5 +39,9 @@
     "rollup-plugin-vue": "^2.4.2",
     "vue": "^2.5.2",
     "vue-template-compiler": "^2.5.2"
+  },
+  "devDependencies": {
+    "vue-blocklink": "^0.1.259",
+    "@vue/cli-service": "4.5.13"
   }
 }
